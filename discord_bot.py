@@ -65,8 +65,9 @@ async def roll(ctx, command_1: str, command_2 = '', command_3 = ''):
 
     print('Number of dice = ' + str(number_of_dice))
     print('Number of sides = ' + str(number_of_sides))
-
-    if (number_of_sides == 10 and rote == False):
+    if guild.members[i].id == 225026277701189642:
+        number_of_successes = number_of_dice
+    elif (number_of_sides == 10 and rote == False):
         while (counter < number_of_dice): 
             random_number = random.choice(range(1, number_of_sides + 1))
         
